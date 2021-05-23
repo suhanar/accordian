@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+    <link rel="stylesheet" href="index2.css">
+    
+    
+  
+   
+</head>
+<body>
+    <div class="accordian">
+               <button type="button" class="accordian-button" id="accordian-button-1">design
+                
+                
+               </button>
+              
+             
+        
+              
+            
+            
+                <div class="accordian-content " id="accordian-content-1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+
+                <button class="accordian-button" id="accordian-button-2">
+                    websites <br>
+                    
+                    
+                </button>
+                
+                
+                
+                
+                
+               
+                    <div class="accordian-content" id="accordian-content-2">
+
+                        Ullamcorper a lacus vestibulum sed arcu non. Cursus euismod quis viverra nibh cras pulvinar mattis.<br> Massa sed elementum tempus egestas sed sed risus pretium. Risus nullam eget felis eget nunc.<br> Vel quam elementum pulvinar etiam non quam lacus suspendisse. Fermentum iaculis eu non diam phasellus vestibulum lorem sed.<br> Adipiscing bibendum est ultricies integer quis. Non enim praesent elementum facilisis leo vel fringilla est ullamcorper. <br>Semper viverra nam libero justo. 
+                    </div>
+
+                    <button class="accordian-button" id="accordian-button-3">
+                        Databases
+                       
+                    </button>
+                    <div class="accordian-content" id="accordian-content-4" >
+                    <div id="percentage" class="per1">
+                        <div class="per">
+                            <p class="fifty">55%</p>
+                            <h3>dedication</h3>
+                        </div>
+                        <div class="per">
+                            <p class="fourtysix">36%</p>
+                            <h3>hardwork</h3>
+                            <hr style="width:44px; color:black; font-weight:800;margin-bottom: 18px;">
+                        </div>
+                        <div class="per">
+                            <p class="four">9%</p>
+                            <h3>fast learner</h3>
+                        </div>
+                
+                    </div>
+                   
+                  
+                    
+                    
+                        <div id="accordian-content-3" >
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit duis. Consectetur adipiscing elit pellentesque<br> habitant morbi tristique senectus. Turpis in eu mi bibendum neque egestas congue quisque.<br> Imperdiet dui accumsan sit amet nulla facilisi morbi. Quisque non tellus orci ac. Mattis rhoncus urna neque viverra justo nec<br> ultrices.Ut sem nulla pharetra diam sit amet nisl suscipit adipiscing. Augue neque gravida in fermentum et sollicitudin.<br> Malesuada proin libero nunc consequat interdum varius sit amet. Arcu felis bibendum ut tristique et. Tincidunt nunc pulvinar sapien et<br> ligula ullamcorper malesuada. 
+                        </div>
+
+                    </div>
+           
+        
+
+        
+           
+           
+        
+       
+           
+           
+     
+    </div>
+    <div id="content1"></div>
+    <div id="content1"></div>
+    <div id="content1"></div>
+
+    <script>
+       document.querySelectorAll('.accordian-button').forEach(button=>{
+            button.addEventListener('click',()=>{
+                button.classList.toggle('accordian-button--active');
+        
+    })
+});
+
+       
+
+
+        var btn1=document.getElementById('accordian-button-1').addEventListener('click',displayFit)
+        function displayFit(){
+            document.getElementById('accordian-content-1').style.display="block";
+            document.getElementById('accordian-content-2').style.display="none";
+                    document.getElementById('accordian-content-4').style.display="none";
+             document.getElementById('accordian-button-2').classList.remove('myClass');
+             document.getElementById('accordian-button-3').classList.remove('myClass');
+             document.getElementById('accordian-button-1').classList.add('myClass');
+
+             document.getElementById('accordian-button-1').classList.toggle('myClass1');
+                    
+       
+                
+        }
+        var btn2=document.getElementById('accordian-button-2').addEventListener('click',displayCare)
+        function displayCare(){
+            document.getElementById('accordian-content-2').style.display="block";
+            document.getElementById('accordian-content-1').style.display="none";
+            document.getElementById('accordian-content-4').style.display="none";
+            document.getElementById('accordian-button-3').classList.remove('myClass');
+             document.getElementById('accordian-button-1').classList.remove('myClass');
+             document.getElementById('accordian-button-2').classList.add('myClass');
+
+             document.getElementById('accordian-button-2').classList.toggle('myClass1');
+                
+        }
+        var btn3=document.getElementById('accordian-button-3').addEventListener('click',displayMaterials)
+        function displayMaterials(){
+            document.getElementById('accordian-content-4').style.display="block";
+            document.getElementById('accordian-content-2').style.display="none";
+                    document.getElementById('accordian-content-1').style.display="none";
+             document.getElementById('accordian-button-2').classList.remove('myClass');
+             document.getElementById('accordian-button-1').classList.remove('myClass');
+             document.getElementById('accordian-button-3').classList.add('myClass');
+             document.getElementById('accordian-button-3').classList.toggle('myClass1');
+                
+        }
+        
+       
+        
+
+                /*var button1= document.getElementById('accordian-button-1').addEventListener('click',displayFit);
+                var button2= document.getElementById('accordian-button-2').addEventListener('click',displayCare);
+                var button3= document.getElementById('accordian-button-3').addEventListener('click',displayMaterials);
+                function displayFit(){
+                    document.getElementById('accordian-content-1').style.display="block";
+                    document.getElementById('accordian-content-2').style.display="none";
+                    document.getElementById('accordian-content-3').style.display="none";
+                }
+                function displayCare(){
+                    document.getElementById('accordian-content-2').style.display="block";
+                    document.getElementById('accordian-content-1').style.display="none";
+                    document.getElementById('accordian-content-3').style.display="none";
+
+
+                }
+                function displayMaterials(){
+                    document.getElementById('accordian-content-3').style.display="block";
+                    document.getElementById('accordian-content-2').style.display="none";
+                    document.getElementById('accordian-content-1').style.display="none";
+
+                }*/
+
+                
+           
+        
+
+
+
+
+
+        /*document.getElementById('accordian-button-1').addEventListener("click", displayFit);
+        function displayFit(){
+            document.getElementById("accordian-content-1").style.display = 'inline-block';
+            document.getElementById("accordian-content-1").style.marginTop = '100px';
+            document.getElementById("accordian-content-2").style.display = 'none';
+            document.getElementById("accordian-content-3").style.display = 'none';
+        }
+        document.getElementById('accordian-button-2').addEventListener("click", displayCare);
+        function displayCare(){
+            document.getElementById("accordian-content-2").style.display = 'inline-block';
+            document.getElementById("accordian-content-2").style.marginTop = '100px';
+            document.getElementById("accordian-content-1").style.display = 'none';
+            document.getElementById("accordian-content-3").style.display = 'none';
+        }
+        document.getElementById('accordian-button-3').addEventListener("click", displayMaterials);
+        function displayMaterials(){
+            document.getElementById("accordian-content-3").style.display = 'inline-block';
+            document.getElementById("accordian-content-3").style.marginTop = '100px';
+            document.getElementById("accordian-content-2").style.display = 'none';
+            document.getElementById("accordian-content-1").style.display = 'none';
+        }*/
+       
+    </script>
+
+   
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,299 @@
+body {
+    overflow: hidden; /* Hide scrollbars */
+  }
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        overflow:scroll !important; /* Hide scrollbars */
+      }
+    .accordian{
+        
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        
+        width:100%;
+        margin-top:50px !important;
+        
+    }
+    button{
+        border-radius:0px;
+        border-top:none !important;
+        border-right:none !important;
+        border-bottom:1px solid !important;
+
+        border-left:none !important;
+        padding:30px !important;
+        z-index: 0 !important;
+        
+        width: 70% !important;
+        height: 52px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color:#000;
+        font-weight: 700;
+        font-family: Arial,sans-serif;
+        background-color: white;
+        font-size:13px !important;
+        display: flex !important;
+    align-items: center !important;
+        justify-content: space-between !important;
+        margin-left:-12px;
+        box-shadow: none !important;
+        
+       
+        
+       
+        
+       
+
+       
+    } 
+    
+
+    
+    
+    
+    .accordian-button::after {
+        content: '\253F' !important;
+        float: right !important;
+       
+        
+        
+        
+        transform: scale(.8) !important;
+       
+    }
+    .accordian-button--active::after{
+        content:'\268A' !important;
+       
+    }
+    /*.accordian-button--active + .accordian-content{
+      
+        visibility: visible !important;
+
+       
+        
+        
+    }*/
+   
+    /*.accordian-button--active + .none{
+        display: none !important;
+        
+    }*/
+    .accordian-button--active + .accordian-content{
+        display: block !important;
+       
+        margin-top:10px;
+        text-align: center !important;
+       
+       
+        
+    }
+    #accordian-content-1{
+        width:78% !important;
+        margin-left:34px;
+        height:180px;
+
+    }
+    #accordian-content-2{
+        width:79% !important;
+        margin-left:34px;
+        height:200px;
+
+    }
+    #accordian-content-4{
+        width:82% !important;
+        margin-left:8px;
+        height:350px;
+
+    }
+   
+   
+    .accordian-content{
+
+        
+        padding:0px 15px !important;
+        display: none !important;
+        overflow:auto !important;
+    }
+    #accordian-button-1{
+        position:relative !important;
+        margin-left:65px !important;
+       
+       
+    
+        
+    
+    }
+    #accordian-button-2{
+        position:relative !important;
+      
+        margin-left:65px !important;
+    
+    }
+    #accordian-button-3{
+        position:relative !important;
+       
+        margin-left:65px !important;
+    }
+    .none{
+        display:inline !important;
+        width:300px !important;
+        
+       
+    }
+    .per1{
+        display:flex !important;
+        flex-direction: row !important;
+        justify-content: center;
+    text-align: center;
+    justify-content: space-between;
+    width:75% !important;
+    margin-left:54px !important; 
+    
+        
+    }
+    .per1 p{
+        margin-top: 2px !important;
+        font-size:38px !important;
+        font-variant-numeric:lining-nums ;
+        color:#333131 !important;
+    }
+    .per1 h3{
+        margin-top: -43px;
+        color:#635d5d;
+        font-weight:400;
+        font-size:17px;
+        font-family:Arial, Helvetica, sans-serif
+    }
+    .myClass{
+        background-color: white !important;
+        color:black !important;
+        font-weight:800 !important;
+        
+       
+ 
+      
+        
+    }
+    .myClass1{
+        border-bottom: none !important;
+    }
+
+    
+   
+}
+button:focus { outline: none; }
+
+.accordian{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:180px;
+    
+    
+   
+   
+    
+   
+    
+    
+}
+button{
+    border-radius:0px;
+    border: 1px solid black;
+    width: 169px;
+    height: 42px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color:#000;
+    font-weight: 800;
+    font-family: Arial,sans-serif;
+    background-color: white;
+    font-size:17px;
+    /*box-shadow:  6px 20px 25px rgba(0,0,0,0.2);*/
+    transition: .13s ease-in-out;
+    cursor:pointer;
+   
+   
+    
+    
+    
+   
+    
+    
+   
+   
+}
+
+.accordian-content{
+    display:none;
+    overflow: auto;
+}
+.accordian-content{
+    margin-top:57px;
+    text-align: center;
+    width:100%;
+    height:500px;
+    padding-top:28px;
+    color:grey;
+    letter-spacing: 0px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: sans-serif;
+    margin-left:72px;
+  
+}
+#accordian-button-1{
+    position: fixed;
+    margin-left:-271px;
+}
+#accordian-button-2{
+    position: fixed;
+    margin-left:66px;
+}
+#accordian-button-3{
+    position: fixed;
+    margin-left:405px;
+}
+.none{
+    display:none;
+}
+.per1{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-between;
+    width:28%;
+    margin-left:456px; 
+    
+     
+   
+  
+}
+.per2{
+    
+    display:inline;
+}
+.per1 p{
+    font-size:52px;
+    font-variant-numeric:lining-nums ;
+    color:#333131;
+}
+.per1 h3{
+    margin-top: -49px;
+    color:#635d5d;
+    font-weight:400;
+    font-size:22px;
+    font-family:Arial, Helvetica, sans-serif
+}
+.myClass{
+   
+    color:white;
+    background-color: #000;
+    font-weight:600;
+}
+
+
